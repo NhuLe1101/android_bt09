@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".relative_layout">
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/cube1"
+            android:layout_width="175dp"
+            android:layout_height="330dp"
+            android:background="#6977b6" />
+
+        <TextView
+            android:id="@+id/cube2"
+            android:layout_width="175dp"
+            android:layout_height="330dp"
+            android:layout_below="@id/cube1"
+            android:layout_marginTop="10dp"
+            android:background="#d74f97" />
+
+        <TextView
+            android:id="@+id/cube3"
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/cube1"
+            android:background="#a41d21" />
+
+        <TextView
+            android:id="@+id/cube4"
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_below="@id/cube3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/cube1"
+            android:background="#e6e6e6" />
+
+        <TextView
+            android:id="@+id/cube5"
+            android:layout_width="211dp"
+            android:layout_height="228dp"
+            android:layout_below="@id/cube4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/cube2"
+            android:background="#273a98" />
+    </RelativeLayout>
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="#000000" />
+</FrameLayout>
